@@ -279,3 +279,59 @@ if (location.search.includes("edit")) {
     tip.textContent = "x: " + x + ", y: " + y;
   });
 }
+
+/* =====================================================
+   ★ 미생물 분포도 데이터 (여기만 수정하면 됩니다) ★
+   - name : 미생물 이름, percent : 비율(%), color : 원그래프 색
+   - 비율의 합이 100이 아니어도 자동으로 100%에 맞춰 계산됩니다.
+   - 실제 동정 결과가 나오면 값을 바꾸고 microbeIsExample 을 false 로 바꾸세요.
+   ===================================================== */
+const microbeIsExample = true;   // true: "예시 데이터" 표시, false: 표시 없음
+
+const microbes = [
+  { name: "바실러스속 (예시)",         percent: 30, color: "#2e7d9e" },
+  { name: "포도상구균속 (예시)",       percent: 25, color: "#e07a2f" },
+  { name: "마이크로코쿠스속 (예시)",   percent: 20, color: "#d4b000" },
+  { name: "페니실리움속 곰팡이 (예시)", percent: 15, color: "#5aa469" },
+  { name: "기타·미동정",               percent: 10, color: "#9aa5a4" }
+];
+
+/* ===== 분포도 기능 코드 (보통 수정하지 않아도 됩니다) ===== */
+function drawChart() {
+  const total = microbes.reduce((sum, m) => sum + m.percent, 0);
+  const legend = $("chart-legend");
+  legend.innerHTML = "";
+  let start = 0;
+  const parts = [];
+
+  microbes.forEach((m) => {
+    const share = (m.percent / total) * 100;           // 전체에서 차지하는 비율
+    parts.push(m.color + " " + start + "% " + (start + share) + "%");
+    start += share;
+
+    // 오른쪽 설명 목록 만들기
+    const li = document.createElement("li");
+    const swatch = document.createElement("span");
+    swatch.className = "swatch";
+    swatch.style.background = m.color;
+    const text = document.createElement("span");
+    text.textContent = m.name + "  " + share.toFixed(1) + "%";
+    li.append(swatch, text);
+    legend.appendChild(li);
+  });
+
+  // 비율만큼 원의 면적을 나눠 색칠하기
+  $("pie").style.background = "conic-gradient(" + parts.join(", ") + ")";
+  $("chart-example").hidden = !microbeIsExample;
+}
+
+// 열기 / 닫기
+$("chart-btn").addEventListener("click", () => {
+  drawChart();
+  $("chart-modal").hidden = false;
+});
+$("chart-close").addEventListener("click", () => ($("chart-modal").hidden = true));
+$("chart-modal").addEventListener("click", (e) => {      // 바깥 어두운 곳을 눌러도 닫힘
+  if (e.target === $("chart-modal")) $("chart-modal").hidden = true;
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("chart-modal").hidden = true; });
