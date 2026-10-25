@@ -45,7 +45,6 @@ body {
 .spot.bad  { background: var(--bad); }
 .spot.mid  { background: var(--mid); }
 .spot.good { background: var(--good); }
-.spot.none { background: var(--none); }
 
 .spot:hover, .spot:focus-visible { outline: 3px solid #222; }
 
