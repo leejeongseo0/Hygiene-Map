@@ -17,18 +17,6 @@ const DEFAULT = {
 };
 
 const rawPlaces = [
-  // ▼ 모든 항목을 적은 예시 (교무1실)
-  {
-    id: "gyomu1", name: "교무1실", x: 41.8, y: 40.8,
-    target: "도어락",
-    date: "2026-09-17",
-    photos: [
-      { src: "images/gyomu1-1.jpg" },
-    ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false
-  },
 
   // ▼ 위쪽 복도 쪽 방
   { id: "print",  name: "인쇄실", x: 17.2, y: 40.8, target: "문 손잡이" ,
@@ -44,27 +32,8 @@ const rawPlaces = [
 
 },
    
-   { id: "health", name: "보건실", x: 25.0, y: 40.8, target: "-",
-    date: "2026-09-17",
-    photos: [
-      { src: "images/gyomu1-1.jpg" },
-    ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false
-  },
 
-{ id: "broad",  name: "방송실", x: 32.6, y: 40.8, target: "-",
-   date: "2026-09-17",
-    photos: [
-      { src: "images/gyomu1-1.jpg" },
-    ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false
-  },
-
-{ id: "duty",   name: "당직실", x: 49.2, y: 40.8, target: "침대 난간, 문 손잡이",
+{ id: "duty",   name: "당직실", x: 49.2, y: 40.8, target: "문",
    date: "2026-09-17",
     photos: [
       { src: "images/duty1.png" },
@@ -121,7 +90,7 @@ const rawPlaces = [
 
   },
 
-{ id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "-",
+{ id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "문",
  date: "2026-09-17",
    photos: [
   { src: "images/see1.png" },
@@ -134,15 +103,6 @@ const rawPlaces = [
 
   },
 
-{ id: "wc-bottom", name: "화장실(아래)", x: 69.6, y: 80.7, target: "-",
-date: "2026-09-17",
-    photos: [
-      { src: "images/gyomu1-1.jpg" },
-    ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false
-  },
 
   // ▼ 아래쪽 복도 쪽 방
   { id: "prep",    name: "준비실",         x: 35.3, y: 92.7, target: "서랍장",
@@ -187,7 +147,7 @@ date: "2026-09-17",
 
   },
 
-{ id: "elevator", name: "엘리베이터",    x: 11.4, y: 75.6, target: "-",
+{ id: "elevator", name: "엘리베이터",    x: 11.4, y: 75.6, target: "버튼",
   date: "2026-09-17",
     photos: [
       { src: "images/ele1.png" },
@@ -202,7 +162,7 @@ date: "2026-09-17",
   },
 
 // ▼ 왼쪽 방
-  { id: "clean",    name: "온학습카페",     x: 4.7, y: 50.8, target: "-",
+  { id: "clean",    name: "온학습카페",     x: 4.7, y: 50.8, target: "문 손잡이",
   date: "2026-09-17",
     photos: [
       { src: "images/cafe1.png" },
