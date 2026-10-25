@@ -85,3 +85,29 @@ body {
 .dot.bad { background: var(--bad); }
 .dot.mid { background: var(--mid); }
 .dot.good { background: var(--good); }
+
+/* ===== 미생물 분포도 ===== */
+.site-header { position: relative; }
+.chart-btn {
+  position: absolute; top: 14px; right: 14px;
+  padding: 6px 14px; font-size: 0.85rem; cursor: pointer;
+  color: #fff; background: transparent; border: 1px solid #fff; border-radius: 999px;
+}
+.chart-btn:hover { background: rgba(255,255,255,.2); }
+@media (max-width: 800px) {
+  .chart-btn { position: static; margin-top: 10px; }   /* 모바일에서는 제목 아래로 */
+}
+
+/* 팝업 */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center; z-index: 15; padding: 16px; }
+.modal[hidden] { display: none; }
+.modal-box { background: #fff; width: 100%; max-width: 640px; max-height: 90vh; overflow: auto; padding: 20px; }
+.modal-box h2 { margin: 0 0 6px; color: var(--main); }
+
+/* 원그래프 */
+.chart-body { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: center; margin-top: 14px; }
+.pie { width: min(300px, 70vw); aspect-ratio: 1 / 1; border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
+.chart-legend { list-style: none; margin: 0; padding: 0; }
+.chart-legend li { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.swatch { width: 16px; height: 16px; border-radius: 3px; flex: none; }
+.chart-note { font-size: 0.85rem; color: #55706d; margin: 16px 0 0; }
