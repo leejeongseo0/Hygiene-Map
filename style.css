@@ -85,4 +85,3 @@ body {
 .dot.bad { background: var(--bad); }
 .dot.mid { background: var(--mid); }
 .dot.good { background: var(--good); }
-.dot.none { background: var(--none); }
