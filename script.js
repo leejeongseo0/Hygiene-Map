@@ -26,8 +26,8 @@ const rawPlaces = [
       { src: "images/print1.png" },
          { src: "images/print2.jpg" }
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+          microbes: ["푸실리움"],
+   observation: "푸모니신과 같은 독소를 만들어 낸다.",
     example: false,
      level: "mid"
 
@@ -40,8 +40,8 @@ const rawPlaces = [
      { src: "images/button2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+             microbes: ["아스페르길루스(누룩곰팡이)"],
+ observation: "자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
      level: "bad",
 
@@ -49,20 +49,7 @@ const rawPlaces = [
 
 
    
-   { id: "duty",   name: "당직실", x: 49.2, y: 40.8, target: "문",
-   date: "2026-09-17",
-    photos: [
-      { src: "images/duty1.png" },
-     { src: "images/duty2.jpg" }
-
-    ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false,
-     level: "bad",
-
-},
-
+   
 { id: "box",   name: "복도", x: 46.6, y: 24.7, target: "택배 박스",
   date: "2026-09-17",
     photos: [
@@ -70,8 +57,8 @@ const rawPlaces = [
          { src: "images/box2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+                microbes: ["클라도스포리움"],
+ observation: "진륜계에 속하는 곰팡이",
     example: false,
      level: "bad"
 
@@ -84,8 +71,8 @@ const rawPlaces = [
          { src: "images/ground2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+       microbes: ["클라도스포리움", "누룩곰팡이"],
+ observation: "진륜계에 속하는 곰팡이, 자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
       level: "mid"
 
@@ -99,8 +86,8 @@ const rawPlaces = [
           { src: "images/sliper2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+            microbes: ["클라도스포리움"],
+   observation: "진륜계에 속하는 곰팡이",
     example: false,
         level: "bad"
 
@@ -113,8 +100,8 @@ const rawPlaces = [
      { src: "images/stair2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+               microbes: ["아스페르길루스(누룩곰팡이)"],
+ observation: "자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
      level: "bad",
 
@@ -127,27 +114,13 @@ const rawPlaces = [
      { src: "images/haeng2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+                   microbes: ["클라도스포리움"],
+ observation: "진륜계에 속하는 곰팡이",
     example: false,
      level: "bad",
 
 },
    
-
-   
-   { id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "문",
- date: "2026-09-17",
-   photos: [
-  { src: "images/see1.png" },
-  { src: "images/see2.jpg" }
-],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
-    example: false,
-      level: "good"
-
-  },
 
 
   // ▼ 아래쪽 복도 쪽 방
@@ -158,8 +131,8 @@ const rawPlaces = [
          { src: "images/ready2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+        microbes: ["클라도스포리움", "누룩곰팡이"],
+   observation: "진륜계에 속하는 곰팡이, 자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
         level: "mid"
 
@@ -172,8 +145,8 @@ const rawPlaces = [
          { src: "images/key2.jpg" },
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+    microbes: ["클라도스포리움"],    
+ observation: "진륜계에 속하는 곰팡이",
     example: false,
       level: "bad"
 
@@ -186,8 +159,8 @@ const rawPlaces = [
           { src: "images/high2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+         microbes: ["누룩곰팡이"],
+ observation: "자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
       level: "good"
 
@@ -200,8 +173,8 @@ const rawPlaces = [
         { src: "images/ele2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+          microbes: ["클라도스포리움"],
+ observation: "진륜계에 속하는 곰팡이",
     example: false,
       level: "good"
 
@@ -215,8 +188,8 @@ const rawPlaces = [
         { src: "images/cafe2.jpg" }
 
     ],
-    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
-    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+            microbes: ["누룩곰팡이"],
+   observation: "자낭균류 누룩곰팡이속에 속하는 대표적인 발효 곰팡이",
     example: false,
         level: "mid"
 
