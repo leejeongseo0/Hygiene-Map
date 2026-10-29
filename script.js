@@ -32,8 +32,23 @@ const rawPlaces = [
 
 },
    
+{ id: "button",   name: "현관", x: 69.2, y: 35.2, target: "자동문 손잡이",
+   date: "2026-09-17",
+    photos: [
+      { src: "images/button1.jpg" },
+     { src: "images/button2.jpg" }
 
-{ id: "duty",   name: "당직실", x: 49.2, y: 40.8, target: "문",
+    ],
+    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
+    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+    example: false,
+     level: "bad",
+
+},
+
+
+   
+   { id: "duty",   name: "당직실", x: 49.2, y: 40.8, target: "문",
    date: "2026-09-17",
     photos: [
       { src: "images/duty1.png" },
