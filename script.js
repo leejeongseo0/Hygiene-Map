@@ -105,7 +105,22 @@ const rawPlaces = [
 
   },
 
-{ id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "문",
+{ id: "stair",   name: "계단", x: 56.5, y: 88.8, target: "손잡이",
+   date: "2026-09-17",
+    photos: [
+      { src: "images/stair1.jpg" },
+     { src: "images/stair2.jpg" }
+
+    ],
+    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
+    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+    example: false,
+     level: "bad",
+
+},
+
+   
+   { id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "문",
  date: "2026-09-17",
    photos: [
   { src: "images/see1.png" },
