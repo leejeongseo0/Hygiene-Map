@@ -228,7 +228,6 @@ function showPlace(place) {
   $("info-date").textContent = place.date;
   $("info-microbes").textContent = place.microbes.length ? place.microbes.join(", ") : "아직 동정하지 않음";
   $("info-observation").textContent = place.observation;
-  $("info-note").textContent = place.note;
 
   // 선택된 점 색 바꾸기
   document.querySelectorAll(".spot").forEach((b) =>
