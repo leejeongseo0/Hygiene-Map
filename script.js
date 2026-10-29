@@ -11,6 +11,7 @@ const DEFAULT = {
   target: "(채취 대상을 입력하세요)",
   date: "2025-00-00",
   photos: [],
+  microbes: [],
   observation: "(예시) 아직 관찰 결과가 입력되지 않았습니다.",
   note: "(예시) 확인되지 않은 예시 정보입니다.",
   example: false
@@ -252,6 +253,7 @@ function showPlace(place) {
   $("info-example").hidden = !place.example;
   $("info-target").textContent = place.target;
   $("info-date").textContent = place.date;
+  $("info-microbes").textContent = place.microbes.length ? place.microbes.join(", ") : "아직 동정하지 않음";
   $("info-observation").textContent = place.observation;
   $("info-note").textContent = place.note;
 
