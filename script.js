@@ -119,6 +119,21 @@ const rawPlaces = [
 
 },
 
+{ id: "haeng",   name: "행정실", x: 64.4, y: 61.9, target: "손잡이",
+   date: "2026-09-17",
+    photos: [
+      { src: "images/haeng1.jpg" },
+     { src: "images/haeng2.jpg" }
+
+    ],
+    observation: "(예시) 흰색의 둥근 집락이 여러 개 관찰됨. 가장자리는 매끈함.",
+    note: "(예시) 종류는 확인되지 않았습니다. 외형 관찰만 기록했습니다.",
+    example: false,
+     level: "bad",
+
+},
+   
+
    
    { id: "av",        name: "시청각실",   x: 64.6, y: 71.5, target: "문",
  date: "2026-09-17",
